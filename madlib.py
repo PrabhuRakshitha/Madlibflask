@@ -20,7 +20,7 @@ def getMadlib():
     try:
         story = makeStory()
         if story:
-            print(story)
+            # print(story)
             return story
 
     except Exception as e:
@@ -51,7 +51,7 @@ def getFillers(filler):
 def makeStory():
     try:
         template , fillers = getTemplate()
-        print(template)
+        # print(template)
         words=[]
         for fill in fillers:
             madword = getFillers(fill)
